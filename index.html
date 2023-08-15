@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beautiful Bootstrap Tabs</title>
+  <!-- Link Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <style>
+        /* Custom styling for the tabs */
+        .nav-tabs {
+          justify-content: center;
+          padding: 20px;
+          background-color: #f8f9fa;
+          display: flex;
+        }
+      
+        .nav-tabs .nav-item {
+          margin-right: 20px;
+        }
+      
+        .nav-tabs .nav-link {
+          border: none;
+          border-radius: 0;
+          color: #333;
+          background-color: #f8f9fa;
+          transition: background-color 0.2s ease-in-out;
+        }
+      
+        .nav-tabs .nav-link:hover {
+          background-color: #e9ecef;
+        }
+      
+        .nav-tabs .nav-link.active {
+          color: #007bff;
+          font-weight: bold;
+          background-color: #fff;
+          border-bottom: 2px solid #007bff;
+        }
+      
+        .tab-content {
+          border: 1px solid #007bff;
+          padding: 15px;
+          background-color: #fff;
+        }
+      </style>
+      
+  <div class="container mt-5">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="tab1-tab" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Tab 1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="tab2-tab" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Tab 2</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="tab3-tab" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="false">Tab 3</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="tab4-tab" data-toggle="tab" href="#tab4" role="tab" aria-controls="tab4" aria-selected="false">Tab 4</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="tab5-tab" data-toggle="tab" href="#tab5" role="tab" aria-controls="tab5" aria-selected="false">Tab 5</a>
+      </li>
+    </ul>
+    <div class="tab-content mt-3" id="myTabContent">
+      <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+        <!-- Tab 1 content goes here -->
+        <p>This is the content of Tab 1.</p>
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6">
+              <div class="icon-box">
+                <i class="fas fa-globe"></i>
+                <p>Icon Name 1</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+              <div class="icon-box">
+                <i class="fas fa-heart"></i>
+                <p>Icon Name 2</p>
+              </div>
+            </div>
+            <!-- Add more icon boxes as needed -->
+          </div>
+        </div>
+        
+      </div>
+      <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
+        <!-- Tab 2 content goes here -->
+        <p>This is the content of Tab 2.</p>
+      </div>
+      <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
+        <!-- Tab 3 content goes here -->
+        <p>This is the content of Tab 3.</p>
+      </div>
+      <div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="tab4-tab">
+        <!-- Tab 4 content goes here -->
+        <p>This is the content of Tab 4.</p>
+      </div>
+      <div class="tab-pane fade" id="tab5" role="tabpanel" aria-labelledby="tab5-tab">
+        <!-- Tab 5 content goes here -->
+        <p>This is the content of Tab 5.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Link Bootstrap and jQuery JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
